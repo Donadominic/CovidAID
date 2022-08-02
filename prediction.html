@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>COVIDAID RESULT</title>
+    <!--<link rel="stylesheet" href="style.css"> -->
+	<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"> 
+</head>
+<body>
+    <div class="prediction">
+
+        <div class="navbar">
+           <!-- <img src="IMG_20210610_170523.jpg" class="logo"> -->
+			<img src="{{ url_for('static', filename='IMG_20210610_170523.jpg') }}" class="logo"></img>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </div>
+        <h1 style="text-align: center">TEST RESULT IS:  {{data}} </h1>
+    </div>
+        

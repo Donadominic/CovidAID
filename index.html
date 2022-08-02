@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>COVIDAID</title>
+    <!-- <link rel="stylesheet" href="templates/style.css"> -->
+	<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"> 
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <!--<img src="IMG_20210610_170523.jpg" class="logo"> -->
+			<img src="{{ url_for('static', filename='IMG_20210610_170523.jpg') }}" class="logo"></img>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>COVID ARTIFICIAL INTELLIGENCE DETECTION</h1>
+            <h2>SMART SUPPORT FOR RAPID COVID 19 DETECTION</h2>
+			<form name="passdata" action="prediction" method="POST" enctype="multipart/form-data">	
+            <div>
+                <button type="submit"><span></span>TEST</button>
+                <button type="button"><span></span>CLEAR</button>
+            </div>
+        </div>
+        <div class="imgupld">
+            <h1>Please upload image</h1>
+        </div>
+        <div class="fileinput">
+				
+					
+				<input type="file" class="upload-box" name="img">
+			
+			
+        </div>
+        
+        </form>
+        
+    </div>
+    
+    
+</body>    
+</html>
